@@ -1,0 +1,960 @@
+2021-06-07T08:00:48+00:00 CRITICAL Uncaught Error: Unknown named parameter $tasks_meta_id in /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php:292
+Stack trace:
+#0 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#1 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#2 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/actions/ActionScheduler_Action.php(22): do_action_ref_array('wpforms_email_s...', Array)
+#3 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/abstracts/ActionScheduler_Abstract_QueueRunner.php(65): ActionScheduler_Action->execute()
+#4 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(162): ActionScheduler_Abstract_QueueRunner->process_action(8, 'WP Cron')
+#5 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(132): ActionScheduler_QueueRunner->do_batch(25, 'WP Cron')
+#6 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): ActionScheduler_QueueRunner->run('WP Cron')
+#7 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#9 /opt/lampp/htdocs/wordpress1/wordpress/wp-cron.php(138): do_action_ref_array('action_schedule...', Array)
+#10 {main}
+  thrown dans /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php à la ligne 292
+
+2021-06-07T08:00:51+00:00 CRITICAL Uncaught Error: Unknown named parameter $tasks_meta_id in /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php:292
+Stack trace:
+#0 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#1 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#2 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/actions/ActionScheduler_Action.php(22): do_action_ref_array('wpforms_process...', Array)
+#3 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/abstracts/ActionScheduler_Abstract_QueueRunner.php(65): ActionScheduler_Action->execute()
+#4 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(162): ActionScheduler_Abstract_QueueRunner->process_action(338, 'Async Request')
+#5 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(132): ActionScheduler_QueueRunner->do_batch(25, 'Async Request')
+#6 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): ActionScheduler_QueueRunner->run('Async Request')
+#7 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#9 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_AsyncRequest_QueueRunner.php(52): do_action('action_schedule...', 'Async Request')
+#10 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/includes/libraries/wp-async-request.php(147): ActionScheduler_AsyncRequest_QueueRunner->handle()
+#11 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): WP_Async_Request->maybe_handle('')
+#12 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#13 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#14 /opt/lampp/htdocs/wordpress1/wordpress/wp-admin/admin-ajax.php(187): do_action('wp_ajax_as_asyn...')
+#15 {main}
+  thrown dans /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php à la ligne 292
+
+2021-06-07T08:02:05+00:00 CRITICAL Uncaught Error: Unknown named parameter $tasks_meta_id in /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php:292
+Stack trace:
+#0 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#1 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#2 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/actions/ActionScheduler_Action.php(22): do_action_ref_array('wpforms_admin_n...', Array)
+#3 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/abstracts/ActionScheduler_Abstract_QueueRunner.php(65): ActionScheduler_Action->execute()
+#4 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(162): ActionScheduler_Abstract_QueueRunner->process_action(340, 'Async Request')
+#5 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(132): ActionScheduler_QueueRunner->do_batch(25, 'Async Request')
+#6 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): ActionScheduler_QueueRunner->run('Async Request')
+#7 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#9 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_AsyncRequest_QueueRunner.php(52): do_action('action_schedule...', 'Async Request')
+#10 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/includes/libraries/wp-async-request.php(147): ActionScheduler_AsyncRequest_QueueRunner->handle()
+#11 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): WP_Async_Request->maybe_handle('')
+#12 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#13 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#14 /opt/lampp/htdocs/wordpress1/wordpress/wp-admin/admin-ajax.php(187): do_action('wp_ajax_as_asyn...')
+#15 {main}
+  thrown dans /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php à la ligne 292
+
+2021-06-07T08:02:07+00:00 CRITICAL Uncaught TypeError: Elementor\Elements_Manager::create_element_instance(): Argument #1 ($element_data) must be of type array, string given, called in /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/core/base/document.php on line 811 and defined in /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/includes/managers/elements.php:68
+Stack trace:
+#0 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/core/base/document.php(811): Elementor\Elements_Manager->create_element_instance('Array')
+#1 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/astra-sites/inc/importers/batch-processing/class-astra-sites-batch-processing-elementor.php(121): Elementor\Core\Base\Document->get_elements_raw_data(Array, true)
+#2 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/astra-sites/inc/importers/batch-processing/class-astra-sites-batch-processing-elementor.php(66): Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor->import_single_post(2867)
+#3 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/astra-sites/inc/importers/batch-processing/helpers/class-wp-background-process-astra.php(41): Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor->import()
+#4 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/includes/libraries/wp-background-process.php(301): WP_Background_Process_Astra->task(Object(Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor))
+#5 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/includes/libraries/wp-background-process.php(447): WP_Background_Process->handle()
+#6 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): WP_Background_Process->handle_cron_healthcheck()
+#7 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#9 /opt/lampp/htdocs/wordpress1/wordpress/wp-cron.php(138): do_action_ref_array('wp_image_proces...', Array)
+#10 {main}
+  thrown dans /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/includes/managers/elements.php à la ligne 68
+
+2021-06-07T08:04:03+00:00 CRITICAL Uncaught Error: Unknown named parameter $tasks_meta_id in /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php:292
+Stack trace:
+#0 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#1 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#2 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/actions/ActionScheduler_Action.php(22): do_action_ref_array('wpforms_email_s...', Array)
+#3 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/abstracts/ActionScheduler_Abstract_QueueRunner.php(65): ActionScheduler_Action->execute()
+#4 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(162): ActionScheduler_Abstract_QueueRunner->process_action(341, 'Async Request')
+#5 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(132): ActionScheduler_QueueRunner->do_batch(25, 'Async Request')
+#6 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): ActionScheduler_QueueRunner->run('Async Request')
+#7 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#9 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_AsyncRequest_QueueRunner.php(52): do_action('action_schedule...', 'Async Request')
+#10 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/includes/libraries/wp-async-request.php(147): ActionScheduler_AsyncRequest_QueueRunner->handle()
+#11 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): WP_Async_Request->maybe_handle('')
+#12 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#13 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#14 /opt/lampp/htdocs/wordpress1/wordpress/wp-admin/admin-ajax.php(187): do_action('wp_ajax_as_asyn...')
+#15 {main}
+  thrown dans /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php à la ligne 292
+
+2021-06-07T08:04:18+00:00 CRITICAL Uncaught TypeError: Elementor\Elements_Manager::create_element_instance(): Argument #1 ($element_data) must be of type array, string given, called in /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/core/base/document.php on line 811 and defined in /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/includes/managers/elements.php:68
+Stack trace:
+#0 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/core/base/document.php(811): Elementor\Elements_Manager->create_element_instance('Array')
+#1 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/astra-sites/inc/importers/batch-processing/class-astra-sites-batch-processing-elementor.php(121): Elementor\Core\Base\Document->get_elements_raw_data(Array, true)
+#2 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/astra-sites/inc/importers/batch-processing/class-astra-sites-batch-processing-elementor.php(66): Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor->import_single_post(2867)
+#3 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/astra-sites/inc/importers/batch-processing/helpers/class-wp-background-process-astra.php(41): Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor->import()
+#4 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/includes/libraries/wp-background-process.php(301): WP_Background_Process_Astra->task(Object(Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor))
+#5 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/includes/libraries/wp-background-process.php(447): WP_Background_Process->handle()
+#6 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): WP_Background_Process->handle_cron_healthcheck()
+#7 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#9 /opt/lampp/htdocs/wordpress1/wordpress/wp-cron.php(138): do_action_ref_array('wp_image_proces...', Array)
+#10 {main}
+  thrown dans /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/includes/managers/elements.php à la ligne 68
+
+2021-06-07T08:05:01+00:00 CRITICAL Uncaught Error: Unknown named parameter $tasks_meta_id in /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php:292
+Stack trace:
+#0 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#1 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#2 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/actions/ActionScheduler_Action.php(22): do_action_ref_array('wpforms_email_s...', Array)
+#3 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/abstracts/ActionScheduler_Abstract_QueueRunner.php(65): ActionScheduler_Action->execute()
+#4 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(162): ActionScheduler_Abstract_QueueRunner->process_action(343, 'WP Cron')
+#5 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(132): ActionScheduler_QueueRunner->do_batch(25, 'WP Cron')
+#6 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): ActionScheduler_QueueRunner->run('WP Cron')
+#7 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#9 /opt/lampp/htdocs/wordpress1/wordpress/wp-cron.php(138): do_action_ref_array('action_schedule...', Array)
+#10 {main}
+  thrown dans /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php à la ligne 292
+
+2021-06-07T08:05:04+00:00 CRITICAL Uncaught Error: Unknown named parameter $tasks_meta_id in /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php:292
+Stack trace:
+#0 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#1 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#2 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/actions/ActionScheduler_Action.php(22): do_action_ref_array('wpforms_email_s...', Array)
+#3 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/abstracts/ActionScheduler_Abstract_QueueRunner.php(65): ActionScheduler_Action->execute()
+#4 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(162): ActionScheduler_Abstract_QueueRunner->process_action(344, 'Async Request')
+#5 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(132): ActionScheduler_QueueRunner->do_batch(25, 'Async Request')
+#6 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): ActionScheduler_QueueRunner->run('Async Request')
+#7 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#9 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_AsyncRequest_QueueRunner.php(52): do_action('action_schedule...', 'Async Request')
+#10 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/includes/libraries/wp-async-request.php(147): ActionScheduler_AsyncRequest_QueueRunner->handle()
+#11 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): WP_Async_Request->maybe_handle('')
+#12 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#13 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#14 /opt/lampp/htdocs/wordpress1/wordpress/wp-admin/admin-ajax.php(187): do_action('wp_ajax_as_asyn...')
+#15 {main}
+  thrown dans /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php à la ligne 292
+
+2021-06-07T08:06:02+00:00 CRITICAL Uncaught Error: Unknown named parameter $tasks_meta_id in /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php:292
+Stack trace:
+#0 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#1 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#2 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/actions/ActionScheduler_Action.php(22): do_action_ref_array('wpforms_email_s...', Array)
+#3 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/abstracts/ActionScheduler_Abstract_QueueRunner.php(65): ActionScheduler_Action->execute()
+#4 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(162): ActionScheduler_Abstract_QueueRunner->process_action(345, 'WP Cron')
+#5 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(132): ActionScheduler_QueueRunner->do_batch(25, 'WP Cron')
+#6 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): ActionScheduler_QueueRunner->run('WP Cron')
+#7 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#9 /opt/lampp/htdocs/wordpress1/wordpress/wp-cron.php(138): do_action_ref_array('action_schedule...', Array)
+#10 {main}
+  thrown dans /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php à la ligne 292
+
+2021-06-07T08:06:44+00:00 CRITICAL Uncaught Error: Unknown named parameter $tasks_meta_id in /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php:292
+Stack trace:
+#0 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#1 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#2 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/actions/ActionScheduler_Action.php(22): do_action_ref_array('wpforms_email_s...', Array)
+#3 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/abstracts/ActionScheduler_Abstract_QueueRunner.php(65): ActionScheduler_Action->execute()
+#4 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(162): ActionScheduler_Abstract_QueueRunner->process_action(346, 'Async Request')
+#5 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(132): ActionScheduler_QueueRunner->do_batch(25, 'Async Request')
+#6 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): ActionScheduler_QueueRunner->run('Async Request')
+#7 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#9 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_AsyncRequest_QueueRunner.php(52): do_action('action_schedule...', 'Async Request')
+#10 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/includes/libraries/wp-async-request.php(147): ActionScheduler_AsyncRequest_QueueRunner->handle()
+#11 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): WP_Async_Request->maybe_handle('')
+#12 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#13 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#14 /opt/lampp/htdocs/wordpress1/wordpress/wp-admin/admin-ajax.php(187): do_action('wp_ajax_as_asyn...')
+#15 {main}
+  thrown dans /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php à la ligne 292
+
+2021-06-07T08:07:02+00:00 CRITICAL Uncaught Error: Unknown named parameter $tasks_meta_id in /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php:292
+Stack trace:
+#0 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#1 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#2 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/actions/ActionScheduler_Action.php(22): do_action_ref_array('wpforms_email_s...', Array)
+#3 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/abstracts/ActionScheduler_Abstract_QueueRunner.php(65): ActionScheduler_Action->execute()
+#4 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(162): ActionScheduler_Abstract_QueueRunner->process_action(347, 'WP Cron')
+#5 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(132): ActionScheduler_QueueRunner->do_batch(25, 'WP Cron')
+#6 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): ActionScheduler_QueueRunner->run('WP Cron')
+#7 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#9 /opt/lampp/htdocs/wordpress1/wordpress/wp-cron.php(138): do_action_ref_array('action_schedule...', Array)
+#10 {main}
+  thrown dans /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php à la ligne 292
+
+2021-06-07T08:08:47+00:00 CRITICAL Uncaught Error: Unknown named parameter $tasks_meta_id in /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php:292
+Stack trace:
+#0 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#1 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#2 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/actions/ActionScheduler_Action.php(22): do_action_ref_array('wpforms_email_s...', Array)
+#3 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/abstracts/ActionScheduler_Abstract_QueueRunner.php(65): ActionScheduler_Action->execute()
+#4 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(162): ActionScheduler_Abstract_QueueRunner->process_action(348, 'Async Request')
+#5 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(132): ActionScheduler_QueueRunner->do_batch(25, 'Async Request')
+#6 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): ActionScheduler_QueueRunner->run('Async Request')
+#7 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#9 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_AsyncRequest_QueueRunner.php(52): do_action('action_schedule...', 'Async Request')
+#10 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/includes/libraries/wp-async-request.php(147): ActionScheduler_AsyncRequest_QueueRunner->handle()
+#11 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): WP_Async_Request->maybe_handle('')
+#12 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#13 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#14 /opt/lampp/htdocs/wordpress1/wordpress/wp-admin/admin-ajax.php(187): do_action('wp_ajax_as_asyn...')
+#15 {main}
+  thrown dans /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php à la ligne 292
+
+2021-06-07T08:08:49+00:00 CRITICAL Uncaught TypeError: Elementor\Elements_Manager::create_element_instance(): Argument #1 ($element_data) must be of type array, string given, called in /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/core/base/document.php on line 811 and defined in /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/includes/managers/elements.php:68
+Stack trace:
+#0 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/core/base/document.php(811): Elementor\Elements_Manager->create_element_instance('Array')
+#1 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/astra-sites/inc/importers/batch-processing/class-astra-sites-batch-processing-elementor.php(121): Elementor\Core\Base\Document->get_elements_raw_data(Array, true)
+#2 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/astra-sites/inc/importers/batch-processing/class-astra-sites-batch-processing-elementor.php(66): Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor->import_single_post(2867)
+#3 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/astra-sites/inc/importers/batch-processing/helpers/class-wp-background-process-astra.php(41): Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor->import()
+#4 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/includes/libraries/wp-background-process.php(301): WP_Background_Process_Astra->task(Object(Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor))
+#5 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/includes/libraries/wp-background-process.php(447): WP_Background_Process->handle()
+#6 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): WP_Background_Process->handle_cron_healthcheck()
+#7 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#9 /opt/lampp/htdocs/wordpress1/wordpress/wp-cron.php(138): do_action_ref_array('wp_image_proces...', Array)
+#10 {main}
+  thrown dans /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/includes/managers/elements.php à la ligne 68
+
+2021-06-07T08:10:44+00:00 CRITICAL Uncaught Error: Unknown named parameter $tasks_meta_id in /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php:292
+Stack trace:
+#0 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#1 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#2 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/actions/ActionScheduler_Action.php(22): do_action_ref_array('wpforms_email_s...', Array)
+#3 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/abstracts/ActionScheduler_Abstract_QueueRunner.php(65): ActionScheduler_Action->execute()
+#4 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(162): ActionScheduler_Abstract_QueueRunner->process_action(349, 'WP Cron')
+#5 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(132): ActionScheduler_QueueRunner->do_batch(25, 'WP Cron')
+#6 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): ActionScheduler_QueueRunner->run('WP Cron')
+#7 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#9 /opt/lampp/htdocs/wordpress1/wordpress/wp-cron.php(138): do_action_ref_array('action_schedule...', Array)
+#10 {main}
+  thrown dans /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php à la ligne 292
+
+2021-06-07T08:10:46+00:00 CRITICAL Uncaught Error: Unknown named parameter $tasks_meta_id in /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php:292
+Stack trace:
+#0 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#1 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#2 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/actions/ActionScheduler_Action.php(22): do_action_ref_array('wpforms_email_s...', Array)
+#3 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/abstracts/ActionScheduler_Abstract_QueueRunner.php(65): ActionScheduler_Action->execute()
+#4 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(162): ActionScheduler_Abstract_QueueRunner->process_action(350, 'Async Request')
+#5 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(132): ActionScheduler_QueueRunner->do_batch(25, 'Async Request')
+#6 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): ActionScheduler_QueueRunner->run('Async Request')
+#7 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#9 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_AsyncRequest_QueueRunner.php(52): do_action('action_schedule...', 'Async Request')
+#10 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/includes/libraries/wp-async-request.php(147): ActionScheduler_AsyncRequest_QueueRunner->handle()
+#11 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): WP_Async_Request->maybe_handle('')
+#12 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#13 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#14 /opt/lampp/htdocs/wordpress1/wordpress/wp-admin/admin-ajax.php(187): do_action('wp_ajax_as_asyn...')
+#15 {main}
+  thrown dans /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php à la ligne 292
+
+2021-06-07T08:13:02+00:00 CRITICAL Uncaught Error: Unknown named parameter $tasks_meta_id in /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php:292
+Stack trace:
+#0 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#1 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#2 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/actions/ActionScheduler_Action.php(22): do_action_ref_array('wpforms_email_s...', Array)
+#3 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/abstracts/ActionScheduler_Abstract_QueueRunner.php(65): ActionScheduler_Action->execute()
+#4 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(162): ActionScheduler_Abstract_QueueRunner->process_action(351, 'WP Cron')
+#5 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(132): ActionScheduler_QueueRunner->do_batch(25, 'WP Cron')
+#6 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): ActionScheduler_QueueRunner->run('WP Cron')
+#7 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#9 /opt/lampp/htdocs/wordpress1/wordpress/wp-cron.php(138): do_action_ref_array('action_schedule...', Array)
+#10 {main}
+  thrown dans /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php à la ligne 292
+
+2021-06-07T08:13:04+00:00 CRITICAL Uncaught Error: Unknown named parameter $tasks_meta_id in /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php:292
+Stack trace:
+#0 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#1 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#2 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/actions/ActionScheduler_Action.php(22): do_action_ref_array('wpforms_email_s...', Array)
+#3 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/abstracts/ActionScheduler_Abstract_QueueRunner.php(65): ActionScheduler_Action->execute()
+#4 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(162): ActionScheduler_Abstract_QueueRunner->process_action(352, 'Async Request')
+#5 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(132): ActionScheduler_QueueRunner->do_batch(25, 'Async Request')
+#6 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): ActionScheduler_QueueRunner->run('Async Request')
+#7 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#9 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_AsyncRequest_QueueRunner.php(52): do_action('action_schedule...', 'Async Request')
+#10 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/includes/libraries/wp-async-request.php(147): ActionScheduler_AsyncRequest_QueueRunner->handle()
+#11 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): WP_Async_Request->maybe_handle('')
+#12 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#13 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#14 /opt/lampp/htdocs/wordpress1/wordpress/wp-admin/admin-ajax.php(187): do_action('wp_ajax_as_asyn...')
+#15 {main}
+  thrown dans /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php à la ligne 292
+
+2021-06-07T08:15:06+00:00 CRITICAL Uncaught Error: Unknown named parameter $tasks_meta_id in /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php:292
+Stack trace:
+#0 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#1 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#2 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/actions/ActionScheduler_Action.php(22): do_action_ref_array('wpforms_email_s...', Array)
+#3 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/abstracts/ActionScheduler_Abstract_QueueRunner.php(65): ActionScheduler_Action->execute()
+#4 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(162): ActionScheduler_Abstract_QueueRunner->process_action(353, 'Async Request')
+#5 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(132): ActionScheduler_QueueRunner->do_batch(25, 'Async Request')
+#6 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): ActionScheduler_QueueRunner->run('Async Request')
+#7 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#9 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_AsyncRequest_QueueRunner.php(52): do_action('action_schedule...', 'Async Request')
+#10 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/includes/libraries/wp-async-request.php(147): ActionScheduler_AsyncRequest_QueueRunner->handle()
+#11 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): WP_Async_Request->maybe_handle('')
+#12 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#13 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#14 /opt/lampp/htdocs/wordpress1/wordpress/wp-admin/admin-ajax.php(187): do_action('wp_ajax_as_asyn...')
+#15 {main}
+  thrown dans /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php à la ligne 292
+
+2021-06-07T08:15:08+00:00 CRITICAL Uncaught TypeError: Elementor\Elements_Manager::create_element_instance(): Argument #1 ($element_data) must be of type array, string given, called in /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/core/base/document.php on line 811 and defined in /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/includes/managers/elements.php:68
+Stack trace:
+#0 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/core/base/document.php(811): Elementor\Elements_Manager->create_element_instance('Array')
+#1 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/astra-sites/inc/importers/batch-processing/class-astra-sites-batch-processing-elementor.php(121): Elementor\Core\Base\Document->get_elements_raw_data(Array, true)
+#2 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/astra-sites/inc/importers/batch-processing/class-astra-sites-batch-processing-elementor.php(66): Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor->import_single_post(2867)
+#3 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/astra-sites/inc/importers/batch-processing/helpers/class-wp-background-process-astra.php(41): Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor->import()
+#4 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/includes/libraries/wp-background-process.php(301): WP_Background_Process_Astra->task(Object(Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor))
+#5 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/includes/libraries/wp-background-process.php(447): WP_Background_Process->handle()
+#6 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): WP_Background_Process->handle_cron_healthcheck()
+#7 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#9 /opt/lampp/htdocs/wordpress1/wordpress/wp-cron.php(138): do_action_ref_array('wp_image_proces...', Array)
+#10 {main}
+  thrown dans /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/includes/managers/elements.php à la ligne 68
+
+2021-06-07T09:03:33+00:00 CRITICAL Uncaught Error: Unknown named parameter $tasks_meta_id in /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php:292
+Stack trace:
+#0 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#1 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#2 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/actions/ActionScheduler_Action.php(22): do_action_ref_array('wpforms_email_s...', Array)
+#3 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/abstracts/ActionScheduler_Abstract_QueueRunner.php(65): ActionScheduler_Action->execute()
+#4 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(162): ActionScheduler_Abstract_QueueRunner->process_action(354, 'WP Cron')
+#5 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(132): ActionScheduler_QueueRunner->do_batch(25, 'WP Cron')
+#6 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): ActionScheduler_QueueRunner->run('WP Cron')
+#7 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#9 /opt/lampp/htdocs/wordpress1/wordpress/wp-cron.php(138): do_action_ref_array('action_schedule...', Array)
+#10 {main}
+  thrown dans /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php à la ligne 292
+
+2021-06-07T09:03:38+00:00 CRITICAL Uncaught Error: Unknown named parameter $tasks_meta_id in /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php:292
+Stack trace:
+#0 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#1 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#2 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/actions/ActionScheduler_Action.php(22): do_action_ref_array('wpforms_email_s...', Array)
+#3 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/abstracts/ActionScheduler_Abstract_QueueRunner.php(65): ActionScheduler_Action->execute()
+#4 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(162): ActionScheduler_Abstract_QueueRunner->process_action(355, 'Async Request')
+#5 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(132): ActionScheduler_QueueRunner->do_batch(25, 'Async Request')
+#6 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): ActionScheduler_QueueRunner->run('Async Request')
+#7 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#9 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_AsyncRequest_QueueRunner.php(52): do_action('action_schedule...', 'Async Request')
+#10 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/includes/libraries/wp-async-request.php(147): ActionScheduler_AsyncRequest_QueueRunner->handle()
+#11 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): WP_Async_Request->maybe_handle('')
+#12 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#13 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#14 /opt/lampp/htdocs/wordpress1/wordpress/wp-admin/admin-ajax.php(187): do_action('wp_ajax_as_asyn...')
+#15 {main}
+  thrown dans /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php à la ligne 292
+
+2021-06-07T09:04:45+00:00 CRITICAL Uncaught TypeError: Elementor\Elements_Manager::create_element_instance(): Argument #1 ($element_data) must be of type array, string given, called in /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/core/base/document.php on line 811 and defined in /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/includes/managers/elements.php:68
+Stack trace:
+#0 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/core/base/document.php(811): Elementor\Elements_Manager->create_element_instance('Array')
+#1 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/astra-sites/inc/importers/batch-processing/class-astra-sites-batch-processing-elementor.php(121): Elementor\Core\Base\Document->get_elements_raw_data(Array, true)
+#2 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/astra-sites/inc/importers/batch-processing/class-astra-sites-batch-processing-elementor.php(66): Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor->import_single_post(2867)
+#3 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/astra-sites/inc/importers/batch-processing/helpers/class-wp-background-process-astra.php(41): Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor->import()
+#4 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/includes/libraries/wp-background-process.php(301): WP_Background_Process_Astra->task(Object(Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor))
+#5 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/includes/libraries/wp-background-process.php(447): WP_Background_Process->handle()
+#6 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): WP_Background_Process->handle_cron_healthcheck()
+#7 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#9 /opt/lampp/htdocs/wordpress1/wordpress/wp-cron.php(138): do_action_ref_array('wp_image_proces...', Array)
+#10 {main}
+  thrown dans /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/includes/managers/elements.php à la ligne 68
+
+2021-06-07T09:05:51+00:00 CRITICAL Uncaught Error: Unknown named parameter $tasks_meta_id in /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php:292
+Stack trace:
+#0 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#1 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#2 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/actions/ActionScheduler_Action.php(22): do_action_ref_array('wpforms_admin_n...', Array)
+#3 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/abstracts/ActionScheduler_Abstract_QueueRunner.php(65): ActionScheduler_Action->execute()
+#4 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(162): ActionScheduler_Abstract_QueueRunner->process_action(356, 'WP Cron')
+#5 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(132): ActionScheduler_QueueRunner->do_batch(25, 'WP Cron')
+#6 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): ActionScheduler_QueueRunner->run('WP Cron')
+#7 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#9 /opt/lampp/htdocs/wordpress1/wordpress/wp-cron.php(138): do_action_ref_array('action_schedule...', Array)
+#10 {main}
+  thrown dans /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php à la ligne 292
+
+2021-06-07T09:07:05+00:00 CRITICAL Uncaught Error: Unknown named parameter $tasks_meta_id in /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php:292
+Stack trace:
+#0 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#1 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#2 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/actions/ActionScheduler_Action.php(22): do_action_ref_array('wpforms_email_s...', Array)
+#3 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/abstracts/ActionScheduler_Abstract_QueueRunner.php(65): ActionScheduler_Action->execute()
+#4 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(162): ActionScheduler_Abstract_QueueRunner->process_action(357, 'WP Cron')
+#5 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(132): ActionScheduler_QueueRunner->do_batch(25, 'WP Cron')
+#6 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): ActionScheduler_QueueRunner->run('WP Cron')
+#7 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#9 /opt/lampp/htdocs/wordpress1/wordpress/wp-cron.php(138): do_action_ref_array('action_schedule...', Array)
+#10 {main}
+  thrown dans /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php à la ligne 292
+
+2021-06-07T09:08:39+00:00 CRITICAL Uncaught TypeError: Elementor\Elements_Manager::create_element_instance(): Argument #1 ($element_data) must be of type array, string given, called in /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/core/base/document.php on line 811 and defined in /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/includes/managers/elements.php:68
+Stack trace:
+#0 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/core/base/document.php(811): Elementor\Elements_Manager->create_element_instance('Array')
+#1 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/astra-sites/inc/importers/batch-processing/class-astra-sites-batch-processing-elementor.php(121): Elementor\Core\Base\Document->get_elements_raw_data(Array, true)
+#2 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/astra-sites/inc/importers/batch-processing/class-astra-sites-batch-processing-elementor.php(66): Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor->import_single_post(2867)
+#3 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/astra-sites/inc/importers/batch-processing/helpers/class-wp-background-process-astra.php(41): Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor->import()
+#4 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/includes/libraries/wp-background-process.php(301): WP_Background_Process_Astra->task(Object(Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor))
+#5 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/includes/libraries/wp-background-process.php(447): WP_Background_Process->handle()
+#6 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): WP_Background_Process->handle_cron_healthcheck()
+#7 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#9 /opt/lampp/htdocs/wordpress1/wordpress/wp-cron.php(138): do_action_ref_array('wp_image_proces...', Array)
+#10 {main}
+  thrown dans /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/includes/managers/elements.php à la ligne 68
+
+2021-06-07T09:21:41+00:00 CRITICAL Uncaught Error: Unknown named parameter $tasks_meta_id in /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php:292
+Stack trace:
+#0 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#1 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#2 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/actions/ActionScheduler_Action.php(22): do_action_ref_array('wpforms_admin_n...', Array)
+#3 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/abstracts/ActionScheduler_Abstract_QueueRunner.php(65): ActionScheduler_Action->execute()
+#4 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(162): ActionScheduler_Abstract_QueueRunner->process_action(358, 'WP Cron')
+#5 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(132): ActionScheduler_QueueRunner->do_batch(25, 'WP Cron')
+#6 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): ActionScheduler_QueueRunner->run('WP Cron')
+#7 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#9 /opt/lampp/htdocs/wordpress1/wordpress/wp-cron.php(138): do_action_ref_array('action_schedule...', Array)
+#10 {main}
+  thrown dans /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php à la ligne 292
+
+2021-06-07T09:21:46+00:00 CRITICAL Uncaught Error: Unknown named parameter $tasks_meta_id in /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php:292
+Stack trace:
+#0 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#1 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#2 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/actions/ActionScheduler_Action.php(22): do_action_ref_array('wpforms_email_s...', Array)
+#3 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/abstracts/ActionScheduler_Abstract_QueueRunner.php(65): ActionScheduler_Action->execute()
+#4 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(162): ActionScheduler_Abstract_QueueRunner->process_action(359, 'Async Request')
+#5 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(132): ActionScheduler_QueueRunner->do_batch(25, 'Async Request')
+#6 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): ActionScheduler_QueueRunner->run('Async Request')
+#7 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#9 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_AsyncRequest_QueueRunner.php(52): do_action('action_schedule...', 'Async Request')
+#10 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/includes/libraries/wp-async-request.php(147): ActionScheduler_AsyncRequest_QueueRunner->handle()
+#11 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): WP_Async_Request->maybe_handle('')
+#12 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#13 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#14 /opt/lampp/htdocs/wordpress1/wordpress/wp-admin/admin-ajax.php(187): do_action('wp_ajax_as_asyn...')
+#15 {main}
+  thrown dans /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php à la ligne 292
+
+2021-06-07T09:22:55+00:00 CRITICAL Uncaught Error: Unknown named parameter $tasks_meta_id in /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php:292
+Stack trace:
+#0 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#1 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#2 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/actions/ActionScheduler_Action.php(22): do_action_ref_array('wpforms_admin_n...', Array)
+#3 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/abstracts/ActionScheduler_Abstract_QueueRunner.php(65): ActionScheduler_Action->execute()
+#4 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(162): ActionScheduler_Abstract_QueueRunner->process_action(360, 'Async Request')
+#5 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(132): ActionScheduler_QueueRunner->do_batch(25, 'Async Request')
+#6 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): ActionScheduler_QueueRunner->run('Async Request')
+#7 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#9 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_AsyncRequest_QueueRunner.php(52): do_action('action_schedule...', 'Async Request')
+#10 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/includes/libraries/wp-async-request.php(147): ActionScheduler_AsyncRequest_QueueRunner->handle()
+#11 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): WP_Async_Request->maybe_handle('')
+#12 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#13 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#14 /opt/lampp/htdocs/wordpress1/wordpress/wp-admin/admin-ajax.php(187): do_action('wp_ajax_as_asyn...')
+#15 {main}
+  thrown dans /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php à la ligne 292
+
+2021-06-07T09:22:57+00:00 CRITICAL Uncaught TypeError: Elementor\Elements_Manager::create_element_instance(): Argument #1 ($element_data) must be of type array, string given, called in /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/core/base/document.php on line 811 and defined in /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/includes/managers/elements.php:68
+Stack trace:
+#0 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/core/base/document.php(811): Elementor\Elements_Manager->create_element_instance('Array')
+#1 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/astra-sites/inc/importers/batch-processing/class-astra-sites-batch-processing-elementor.php(121): Elementor\Core\Base\Document->get_elements_raw_data(Array, true)
+#2 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/astra-sites/inc/importers/batch-processing/class-astra-sites-batch-processing-elementor.php(66): Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor->import_single_post(2867)
+#3 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/astra-sites/inc/importers/batch-processing/helpers/class-wp-background-process-astra.php(41): Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor->import()
+#4 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/includes/libraries/wp-background-process.php(301): WP_Background_Process_Astra->task(Object(Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor))
+#5 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/includes/libraries/wp-background-process.php(447): WP_Background_Process->handle()
+#6 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): WP_Background_Process->handle_cron_healthcheck()
+#7 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#9 /opt/lampp/htdocs/wordpress1/wordpress/wp-cron.php(138): do_action_ref_array('wp_image_proces...', Array)
+#10 {main}
+  thrown dans /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/includes/managers/elements.php à la ligne 68
+
+2021-06-07T09:23:52+00:00 CRITICAL Uncaught Error: Unknown named parameter $tasks_meta_id in /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php:292
+Stack trace:
+#0 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#1 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#2 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/actions/ActionScheduler_Action.php(22): do_action_ref_array('wpforms_email_s...', Array)
+#3 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/abstracts/ActionScheduler_Abstract_QueueRunner.php(65): ActionScheduler_Action->execute()
+#4 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(162): ActionScheduler_Abstract_QueueRunner->process_action(361, 'WP Cron')
+#5 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(132): ActionScheduler_QueueRunner->do_batch(25, 'WP Cron')
+#6 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): ActionScheduler_QueueRunner->run('WP Cron')
+#7 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#9 /opt/lampp/htdocs/wordpress1/wordpress/wp-cron.php(138): do_action_ref_array('action_schedule...', Array)
+#10 {main}
+  thrown dans /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php à la ligne 292
+
+2021-06-07T09:24:52+00:00 CRITICAL Uncaught Error: Unknown named parameter $tasks_meta_id in /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php:292
+Stack trace:
+#0 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#1 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#2 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/actions/ActionScheduler_Action.php(22): do_action_ref_array('wpforms_email_s...', Array)
+#3 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/abstracts/ActionScheduler_Abstract_QueueRunner.php(65): ActionScheduler_Action->execute()
+#4 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(162): ActionScheduler_Abstract_QueueRunner->process_action(362, 'WP Cron')
+#5 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(132): ActionScheduler_QueueRunner->do_batch(25, 'WP Cron')
+#6 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): ActionScheduler_QueueRunner->run('WP Cron')
+#7 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#9 /opt/lampp/htdocs/wordpress1/wordpress/wp-cron.php(138): do_action_ref_array('action_schedule...', Array)
+#10 {main}
+  thrown dans /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php à la ligne 292
+
+2021-06-07T09:24:54+00:00 CRITICAL Uncaught Error: Unknown named parameter $tasks_meta_id in /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php:292
+Stack trace:
+#0 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#1 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#2 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/actions/ActionScheduler_Action.php(22): do_action_ref_array('wpforms_email_s...', Array)
+#3 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/abstracts/ActionScheduler_Abstract_QueueRunner.php(65): ActionScheduler_Action->execute()
+#4 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(162): ActionScheduler_Abstract_QueueRunner->process_action(363, 'Async Request')
+#5 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(132): ActionScheduler_QueueRunner->do_batch(25, 'Async Request')
+#6 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): ActionScheduler_QueueRunner->run('Async Request')
+#7 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#9 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_AsyncRequest_QueueRunner.php(52): do_action('action_schedule...', 'Async Request')
+#10 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/includes/libraries/wp-async-request.php(147): ActionScheduler_AsyncRequest_QueueRunner->handle()
+#11 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): WP_Async_Request->maybe_handle('')
+#12 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#13 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#14 /opt/lampp/htdocs/wordpress1/wordpress/wp-admin/admin-ajax.php(187): do_action('wp_ajax_as_asyn...')
+#15 {main}
+  thrown dans /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php à la ligne 292
+
+2021-06-07T09:26:47+00:00 CRITICAL Uncaught Error: Unknown named parameter $tasks_meta_id in /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php:292
+Stack trace:
+#0 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#1 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#2 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/actions/ActionScheduler_Action.php(22): do_action_ref_array('wpforms_email_s...', Array)
+#3 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/abstracts/ActionScheduler_Abstract_QueueRunner.php(65): ActionScheduler_Action->execute()
+#4 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(162): ActionScheduler_Abstract_QueueRunner->process_action(364, 'WP Cron')
+#5 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(132): ActionScheduler_QueueRunner->do_batch(25, 'WP Cron')
+#6 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): ActionScheduler_QueueRunner->run('WP Cron')
+#7 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#9 /opt/lampp/htdocs/wordpress1/wordpress/wp-cron.php(138): do_action_ref_array('action_schedule...', Array)
+#10 {main}
+  thrown dans /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php à la ligne 292
+
+2021-06-07T09:26:48+00:00 CRITICAL Uncaught Error: Unknown named parameter $tasks_meta_id in /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php:292
+Stack trace:
+#0 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#1 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#2 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/actions/ActionScheduler_Action.php(22): do_action_ref_array('wpforms_admin_n...', Array)
+#3 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/abstracts/ActionScheduler_Abstract_QueueRunner.php(65): ActionScheduler_Action->execute()
+#4 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(162): ActionScheduler_Abstract_QueueRunner->process_action(365, 'Async Request')
+#5 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(132): ActionScheduler_QueueRunner->do_batch(25, 'Async Request')
+#6 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): ActionScheduler_QueueRunner->run('Async Request')
+#7 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#9 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_AsyncRequest_QueueRunner.php(52): do_action('action_schedule...', 'Async Request')
+#10 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/includes/libraries/wp-async-request.php(147): ActionScheduler_AsyncRequest_QueueRunner->handle()
+#11 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): WP_Async_Request->maybe_handle('')
+#12 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#13 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#14 /opt/lampp/htdocs/wordpress1/wordpress/wp-admin/admin-ajax.php(187): do_action('wp_ajax_as_asyn...')
+#15 {main}
+  thrown dans /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php à la ligne 292
+
+2021-06-07T09:28:49+00:00 CRITICAL Uncaught Error: Unknown named parameter $tasks_meta_id in /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php:292
+Stack trace:
+#0 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#1 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#2 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/actions/ActionScheduler_Action.php(22): do_action_ref_array('wpforms_email_s...', Array)
+#3 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/abstracts/ActionScheduler_Abstract_QueueRunner.php(65): ActionScheduler_Action->execute()
+#4 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(162): ActionScheduler_Abstract_QueueRunner->process_action(366, 'Async Request')
+#5 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(132): ActionScheduler_QueueRunner->do_batch(25, 'Async Request')
+#6 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): ActionScheduler_QueueRunner->run('Async Request')
+#7 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#9 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_AsyncRequest_QueueRunner.php(52): do_action('action_schedule...', 'Async Request')
+#10 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/includes/libraries/wp-async-request.php(147): ActionScheduler_AsyncRequest_QueueRunner->handle()
+#11 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): WP_Async_Request->maybe_handle('')
+#12 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#13 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#14 /opt/lampp/htdocs/wordpress1/wordpress/wp-admin/admin-ajax.php(187): do_action('wp_ajax_as_asyn...')
+#15 {main}
+  thrown dans /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php à la ligne 292
+
+2021-06-07T09:28:50+00:00 CRITICAL Uncaught TypeError: Elementor\Elements_Manager::create_element_instance(): Argument #1 ($element_data) must be of type array, string given, called in /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/core/base/document.php on line 811 and defined in /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/includes/managers/elements.php:68
+Stack trace:
+#0 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/core/base/document.php(811): Elementor\Elements_Manager->create_element_instance('Array')
+#1 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/astra-sites/inc/importers/batch-processing/class-astra-sites-batch-processing-elementor.php(121): Elementor\Core\Base\Document->get_elements_raw_data(Array, true)
+#2 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/astra-sites/inc/importers/batch-processing/class-astra-sites-batch-processing-elementor.php(66): Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor->import_single_post(2867)
+#3 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/astra-sites/inc/importers/batch-processing/helpers/class-wp-background-process-astra.php(41): Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor->import()
+#4 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/includes/libraries/wp-background-process.php(301): WP_Background_Process_Astra->task(Object(Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor))
+#5 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/includes/libraries/wp-background-process.php(447): WP_Background_Process->handle()
+#6 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): WP_Background_Process->handle_cron_healthcheck()
+#7 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#9 /opt/lampp/htdocs/wordpress1/wordpress/wp-cron.php(138): do_action_ref_array('wp_image_proces...', Array)
+#10 {main}
+  thrown dans /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/includes/managers/elements.php à la ligne 68
+
+2021-06-07T09:29:47+00:00 CRITICAL Uncaught Error: Unknown named parameter $tasks_meta_id in /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php:292
+Stack trace:
+#0 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#1 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#2 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/actions/ActionScheduler_Action.php(22): do_action_ref_array('wpforms_email_s...', Array)
+#3 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/abstracts/ActionScheduler_Abstract_QueueRunner.php(65): ActionScheduler_Action->execute()
+#4 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(162): ActionScheduler_Abstract_QueueRunner->process_action(367, 'WP Cron')
+#5 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(132): ActionScheduler_QueueRunner->do_batch(25, 'WP Cron')
+#6 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): ActionScheduler_QueueRunner->run('WP Cron')
+#7 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#9 /opt/lampp/htdocs/wordpress1/wordpress/wp-cron.php(138): do_action_ref_array('action_schedule...', Array)
+#10 {main}
+  thrown dans /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php à la ligne 292
+
+2021-06-07T09:30:47+00:00 CRITICAL Uncaught Error: Unknown named parameter $tasks_meta_id in /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php:292
+Stack trace:
+#0 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#1 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#2 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/actions/ActionScheduler_Action.php(22): do_action_ref_array('wpforms_email_s...', Array)
+#3 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/abstracts/ActionScheduler_Abstract_QueueRunner.php(65): ActionScheduler_Action->execute()
+#4 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(162): ActionScheduler_Abstract_QueueRunner->process_action(368, 'WP Cron')
+#5 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(132): ActionScheduler_QueueRunner->do_batch(25, 'WP Cron')
+#6 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): ActionScheduler_QueueRunner->run('WP Cron')
+#7 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#9 /opt/lampp/htdocs/wordpress1/wordpress/wp-cron.php(138): do_action_ref_array('action_schedule...', Array)
+#10 {main}
+  thrown dans /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php à la ligne 292
+
+2021-06-07T09:30:49+00:00 CRITICAL Uncaught Error: Unknown named parameter $tasks_meta_id in /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php:292
+Stack trace:
+#0 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#1 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#2 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/actions/ActionScheduler_Action.php(22): do_action_ref_array('wpforms_email_s...', Array)
+#3 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/abstracts/ActionScheduler_Abstract_QueueRunner.php(65): ActionScheduler_Action->execute()
+#4 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(162): ActionScheduler_Abstract_QueueRunner->process_action(369, 'Async Request')
+#5 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(132): ActionScheduler_QueueRunner->do_batch(25, 'Async Request')
+#6 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): ActionScheduler_QueueRunner->run('Async Request')
+#7 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#9 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_AsyncRequest_QueueRunner.php(52): do_action('action_schedule...', 'Async Request')
+#10 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/includes/libraries/wp-async-request.php(147): ActionScheduler_AsyncRequest_QueueRunner->handle()
+#11 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): WP_Async_Request->maybe_handle('')
+#12 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#13 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#14 /opt/lampp/htdocs/wordpress1/wordpress/wp-admin/admin-ajax.php(187): do_action('wp_ajax_as_asyn...')
+#15 {main}
+  thrown dans /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php à la ligne 292
+
+2021-06-07T09:32:46+00:00 CRITICAL Uncaught Error: Unknown named parameter $tasks_meta_id in /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php:292
+Stack trace:
+#0 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#1 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#2 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/actions/ActionScheduler_Action.php(22): do_action_ref_array('wpforms_email_s...', Array)
+#3 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/abstracts/ActionScheduler_Abstract_QueueRunner.php(65): ActionScheduler_Action->execute()
+#4 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(162): ActionScheduler_Abstract_QueueRunner->process_action(370, 'WP Cron')
+#5 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(132): ActionScheduler_QueueRunner->do_batch(25, 'WP Cron')
+#6 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): ActionScheduler_QueueRunner->run('WP Cron')
+#7 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#9 /opt/lampp/htdocs/wordpress1/wordpress/wp-cron.php(138): do_action_ref_array('action_schedule...', Array)
+#10 {main}
+  thrown dans /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php à la ligne 292
+
+2021-06-07T09:34:50+00:00 CRITICAL Uncaught TypeError: Elementor\Elements_Manager::create_element_instance(): Argument #1 ($element_data) must be of type array, string given, called in /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/core/base/document.php on line 811 and defined in /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/includes/managers/elements.php:68
+Stack trace:
+#0 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/core/base/document.php(811): Elementor\Elements_Manager->create_element_instance('Array')
+#1 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/astra-sites/inc/importers/batch-processing/class-astra-sites-batch-processing-elementor.php(121): Elementor\Core\Base\Document->get_elements_raw_data(Array, true)
+#2 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/astra-sites/inc/importers/batch-processing/class-astra-sites-batch-processing-elementor.php(66): Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor->import_single_post(2867)
+#3 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/astra-sites/inc/importers/batch-processing/helpers/class-wp-background-process-astra.php(41): Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor->import()
+#4 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/includes/libraries/wp-background-process.php(301): WP_Background_Process_Astra->task(Object(Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor))
+#5 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/includes/libraries/wp-background-process.php(447): WP_Background_Process->handle()
+#6 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): WP_Background_Process->handle_cron_healthcheck()
+#7 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#9 /opt/lampp/htdocs/wordpress1/wordpress/wp-cron.php(138): do_action_ref_array('wp_image_proces...', Array)
+#10 {main}
+  thrown dans /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/includes/managers/elements.php à la ligne 68
+
+2021-06-07T09:45:16+00:00 CRITICAL Uncaught Error: Unknown named parameter $tasks_meta_id in /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php:292
+Stack trace:
+#0 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#1 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#2 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/actions/ActionScheduler_Action.php(22): do_action_ref_array('wpforms_admin_n...', Array)
+#3 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/abstracts/ActionScheduler_Abstract_QueueRunner.php(65): ActionScheduler_Action->execute()
+#4 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(162): ActionScheduler_Abstract_QueueRunner->process_action(372, 'WP Cron')
+#5 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(132): ActionScheduler_QueueRunner->do_batch(25, 'WP Cron')
+#6 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): ActionScheduler_QueueRunner->run('WP Cron')
+#7 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#9 /opt/lampp/htdocs/wordpress1/wordpress/wp-cron.php(138): do_action_ref_array('action_schedule...', Array)
+#10 {main}
+  thrown dans /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php à la ligne 292
+
+2021-06-07T09:46:26+00:00 CRITICAL Uncaught TypeError: Elementor\Elements_Manager::create_element_instance(): Argument #1 ($element_data) must be of type array, string given, called in /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/core/base/document.php on line 811 and defined in /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/includes/managers/elements.php:68
+Stack trace:
+#0 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/core/base/document.php(811): Elementor\Elements_Manager->create_element_instance('Array')
+#1 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/astra-sites/inc/importers/batch-processing/class-astra-sites-batch-processing-elementor.php(121): Elementor\Core\Base\Document->get_elements_raw_data(Array, true)
+#2 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/astra-sites/inc/importers/batch-processing/class-astra-sites-batch-processing-elementor.php(66): Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor->import_single_post(2867)
+#3 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/astra-sites/inc/importers/batch-processing/helpers/class-wp-background-process-astra.php(41): Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor->import()
+#4 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/includes/libraries/wp-background-process.php(301): WP_Background_Process_Astra->task(Object(Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor))
+#5 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/includes/libraries/wp-background-process.php(447): WP_Background_Process->handle()
+#6 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): WP_Background_Process->handle_cron_healthcheck()
+#7 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#9 /opt/lampp/htdocs/wordpress1/wordpress/wp-cron.php(138): do_action_ref_array('wp_image_proces...', Array)
+#10 {main}
+  thrown dans /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/includes/managers/elements.php à la ligne 68
+
+2021-06-07T09:48:27+00:00 CRITICAL Uncaught TypeError: Elementor\Elements_Manager::create_element_instance(): Argument #1 ($element_data) must be of type array, string given, called in /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/core/base/document.php on line 811 and defined in /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/includes/managers/elements.php:68
+Stack trace:
+#0 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/core/base/document.php(811): Elementor\Elements_Manager->create_element_instance('Array')
+#1 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/astra-sites/inc/importers/batch-processing/class-astra-sites-batch-processing-elementor.php(121): Elementor\Core\Base\Document->get_elements_raw_data(Array, true)
+#2 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/astra-sites/inc/importers/batch-processing/class-astra-sites-batch-processing-elementor.php(66): Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor->import_single_post(2867)
+#3 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/astra-sites/inc/importers/batch-processing/helpers/class-wp-background-process-astra.php(41): Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor->import()
+#4 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/includes/libraries/wp-background-process.php(301): WP_Background_Process_Astra->task(Object(Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor))
+#5 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/includes/libraries/wp-background-process.php(447): WP_Background_Process->handle()
+#6 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): WP_Background_Process->handle_cron_healthcheck()
+#7 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#9 /opt/lampp/htdocs/wordpress1/wordpress/wp-cron.php(138): do_action_ref_array('wp_image_proces...', Array)
+#10 {main}
+  thrown dans /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/includes/managers/elements.php à la ligne 68
+
+2021-06-07T09:52:28+00:00 CRITICAL Uncaught TypeError: Elementor\Elements_Manager::create_element_instance(): Argument #1 ($element_data) must be of type array, string given, called in /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/core/base/document.php on line 811 and defined in /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/includes/managers/elements.php:68
+Stack trace:
+#0 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/core/base/document.php(811): Elementor\Elements_Manager->create_element_instance('Array')
+#1 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/astra-sites/inc/importers/batch-processing/class-astra-sites-batch-processing-elementor.php(121): Elementor\Core\Base\Document->get_elements_raw_data(Array, true)
+#2 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/astra-sites/inc/importers/batch-processing/class-astra-sites-batch-processing-elementor.php(66): Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor->import_single_post(2867)
+#3 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/astra-sites/inc/importers/batch-processing/helpers/class-wp-background-process-astra.php(41): Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor->import()
+#4 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/includes/libraries/wp-background-process.php(301): WP_Background_Process_Astra->task(Object(Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor))
+#5 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/includes/libraries/wp-background-process.php(447): WP_Background_Process->handle()
+#6 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): WP_Background_Process->handle_cron_healthcheck()
+#7 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#9 /opt/lampp/htdocs/wordpress1/wordpress/wp-cron.php(138): do_action_ref_array('wp_image_proces...', Array)
+#10 {main}
+  thrown dans /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/includes/managers/elements.php à la ligne 68
+
+2021-06-07T09:57:33+00:00 CRITICAL Uncaught Error: Unknown named parameter $tasks_meta_id in /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php:292
+Stack trace:
+#0 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#1 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#2 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/actions/ActionScheduler_Action.php(22): do_action_ref_array('wpforms_admin_n...', Array)
+#3 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/abstracts/ActionScheduler_Abstract_QueueRunner.php(65): ActionScheduler_Action->execute()
+#4 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(162): ActionScheduler_Abstract_QueueRunner->process_action(373, 'WP Cron')
+#5 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(132): ActionScheduler_QueueRunner->do_batch(25, 'WP Cron')
+#6 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): ActionScheduler_QueueRunner->run('WP Cron')
+#7 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#9 /opt/lampp/htdocs/wordpress1/wordpress/wp-cron.php(138): do_action_ref_array('action_schedule...', Array)
+#10 {main}
+  thrown dans /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php à la ligne 292
+
+2021-06-07T09:58:37+00:00 CRITICAL Uncaught TypeError: Elementor\Elements_Manager::create_element_instance(): Argument #1 ($element_data) must be of type array, string given, called in /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/core/base/document.php on line 811 and defined in /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/includes/managers/elements.php:68
+Stack trace:
+#0 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/core/base/document.php(811): Elementor\Elements_Manager->create_element_instance('Array')
+#1 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/astra-sites/inc/importers/batch-processing/class-astra-sites-batch-processing-elementor.php(121): Elementor\Core\Base\Document->get_elements_raw_data(Array, true)
+#2 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/astra-sites/inc/importers/batch-processing/class-astra-sites-batch-processing-elementor.php(66): Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor->import_single_post(2867)
+#3 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/astra-sites/inc/importers/batch-processing/helpers/class-wp-background-process-astra.php(41): Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor->import()
+#4 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/includes/libraries/wp-background-process.php(301): WP_Background_Process_Astra->task(Object(Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor))
+#5 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/includes/libraries/wp-background-process.php(447): WP_Background_Process->handle()
+#6 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): WP_Background_Process->handle_cron_healthcheck()
+#7 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#9 /opt/lampp/htdocs/wordpress1/wordpress/wp-cron.php(138): do_action_ref_array('wp_image_proces...', Array)
+#10 {main}
+  thrown dans /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/includes/managers/elements.php à la ligne 68
+
+2021-06-07T10:00:39+00:00 CRITICAL Uncaught Error: Unknown named parameter $tasks_meta_id in /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php:292
+Stack trace:
+#0 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#1 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#2 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/actions/ActionScheduler_Action.php(22): do_action_ref_array('wpforms_admin_n...', Array)
+#3 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/abstracts/ActionScheduler_Abstract_QueueRunner.php(65): ActionScheduler_Action->execute()
+#4 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(162): ActionScheduler_Abstract_QueueRunner->process_action(374, 'Async Request')
+#5 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(132): ActionScheduler_QueueRunner->do_batch(25, 'Async Request')
+#6 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): ActionScheduler_QueueRunner->run('Async Request')
+#7 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#9 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_AsyncRequest_QueueRunner.php(52): do_action('action_schedule...', 'Async Request')
+#10 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/includes/libraries/wp-async-request.php(147): ActionScheduler_AsyncRequest_QueueRunner->handle()
+#11 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): WP_Async_Request->maybe_handle('')
+#12 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#13 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#14 /opt/lampp/htdocs/wordpress1/wordpress/wp-admin/admin-ajax.php(187): do_action('wp_ajax_as_asyn...')
+#15 {main}
+  thrown dans /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php à la ligne 292
+
+2021-06-07T10:02:47+00:00 CRITICAL Uncaught TypeError: Elementor\Elements_Manager::create_element_instance(): Argument #1 ($element_data) must be of type array, string given, called in /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/core/base/document.php on line 811 and defined in /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/includes/managers/elements.php:68
+Stack trace:
+#0 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/core/base/document.php(811): Elementor\Elements_Manager->create_element_instance('Array')
+#1 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/astra-sites/inc/importers/batch-processing/class-astra-sites-batch-processing-elementor.php(121): Elementor\Core\Base\Document->get_elements_raw_data(Array, true)
+#2 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/astra-sites/inc/importers/batch-processing/class-astra-sites-batch-processing-elementor.php(66): Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor->import_single_post(2867)
+#3 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/astra-sites/inc/importers/batch-processing/helpers/class-wp-background-process-astra.php(41): Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor->import()
+#4 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/includes/libraries/wp-background-process.php(301): WP_Background_Process_Astra->task(Object(Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor))
+#5 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/includes/libraries/wp-background-process.php(447): WP_Background_Process->handle()
+#6 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): WP_Background_Process->handle_cron_healthcheck()
+#7 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#9 /opt/lampp/htdocs/wordpress1/wordpress/wp-cron.php(138): do_action_ref_array('wp_image_proces...', Array)
+#10 {main}
+  thrown dans /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/includes/managers/elements.php à la ligne 68
+
+2021-06-07T10:07:47+00:00 CRITICAL Uncaught TypeError: Elementor\Elements_Manager::create_element_instance(): Argument #1 ($element_data) must be of type array, string given, called in /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/core/base/document.php on line 811 and defined in /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/includes/managers/elements.php:68
+Stack trace:
+#0 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/core/base/document.php(811): Elementor\Elements_Manager->create_element_instance('Array')
+#1 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/astra-sites/inc/importers/batch-processing/class-astra-sites-batch-processing-elementor.php(121): Elementor\Core\Base\Document->get_elements_raw_data(Array, true)
+#2 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/astra-sites/inc/importers/batch-processing/class-astra-sites-batch-processing-elementor.php(66): Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor->import_single_post(2867)
+#3 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/astra-sites/inc/importers/batch-processing/helpers/class-wp-background-process-astra.php(41): Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor->import()
+#4 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/includes/libraries/wp-background-process.php(301): WP_Background_Process_Astra->task(Object(Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor))
+#5 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/includes/libraries/wp-background-process.php(447): WP_Background_Process->handle()
+#6 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): WP_Background_Process->handle_cron_healthcheck()
+#7 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#9 /opt/lampp/htdocs/wordpress1/wordpress/wp-cron.php(138): do_action_ref_array('wp_image_proces...', Array)
+#10 {main}
+  thrown dans /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/includes/managers/elements.php à la ligne 68
+
+2021-06-07T10:08:51+00:00 CRITICAL Uncaught Error: Unknown named parameter $tasks_meta_id in /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php:292
+Stack trace:
+#0 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#1 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#2 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/actions/ActionScheduler_Action.php(22): do_action_ref_array('wpforms_admin_n...', Array)
+#3 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/abstracts/ActionScheduler_Abstract_QueueRunner.php(65): ActionScheduler_Action->execute()
+#4 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(162): ActionScheduler_Abstract_QueueRunner->process_action(375, 'WP Cron')
+#5 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(132): ActionScheduler_QueueRunner->do_batch(25, 'WP Cron')
+#6 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): ActionScheduler_QueueRunner->run('WP Cron')
+#7 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#9 /opt/lampp/htdocs/wordpress1/wordpress/wp-cron.php(138): do_action_ref_array('action_schedule...', Array)
+#10 {main}
+  thrown dans /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php à la ligne 292
+
+2021-06-07T10:08:55+00:00 CRITICAL Uncaught Error: Unknown named parameter $tasks_meta_id in /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php:292
+Stack trace:
+#0 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#1 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#2 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/actions/ActionScheduler_Action.php(22): do_action_ref_array('wpforms_admin_n...', Array)
+#3 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/abstracts/ActionScheduler_Abstract_QueueRunner.php(65): ActionScheduler_Action->execute()
+#4 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(162): ActionScheduler_Abstract_QueueRunner->process_action(376, 'Async Request')
+#5 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(132): ActionScheduler_QueueRunner->do_batch(25, 'Async Request')
+#6 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): ActionScheduler_QueueRunner->run('Async Request')
+#7 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#9 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_AsyncRequest_QueueRunner.php(52): do_action('action_schedule...', 'Async Request')
+#10 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/includes/libraries/wp-async-request.php(147): ActionScheduler_AsyncRequest_QueueRunner->handle()
+#11 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): WP_Async_Request->maybe_handle('')
+#12 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#13 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(484): WP_Hook->do_action(Array)
+#14 /opt/lampp/htdocs/wordpress1/wordpress/wp-admin/admin-ajax.php(187): do_action('wp_ajax_as_asyn...')
+#15 {main}
+  thrown dans /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php à la ligne 292
+
+2021-06-07T10:13:03+00:00 CRITICAL Uncaught TypeError: Elementor\Elements_Manager::create_element_instance(): Argument #1 ($element_data) must be of type array, string given, called in /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/core/base/document.php on line 811 and defined in /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/includes/managers/elements.php:68
+Stack trace:
+#0 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/core/base/document.php(811): Elementor\Elements_Manager->create_element_instance('Array')
+#1 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/astra-sites/inc/importers/batch-processing/class-astra-sites-batch-processing-elementor.php(121): Elementor\Core\Base\Document->get_elements_raw_data(Array, true)
+#2 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/astra-sites/inc/importers/batch-processing/class-astra-sites-batch-processing-elementor.php(66): Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor->import_single_post(2867)
+#3 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/astra-sites/inc/importers/batch-processing/helpers/class-wp-background-process-astra.php(41): Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor->import()
+#4 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/includes/libraries/wp-background-process.php(301): WP_Background_Process_Astra->task(Object(Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor))
+#5 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/includes/libraries/wp-background-process.php(447): WP_Background_Process->handle()
+#6 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): WP_Background_Process->handle_cron_healthcheck()
+#7 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#9 /opt/lampp/htdocs/wordpress1/wordpress/wp-cron.php(138): do_action_ref_array('wp_image_proces...', Array)
+#10 {main}
+  thrown dans /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/includes/managers/elements.php à la ligne 68
+
+2021-06-07T10:19:02+00:00 CRITICAL Uncaught TypeError: Elementor\Elements_Manager::create_element_instance(): Argument #1 ($element_data) must be of type array, string given, called in /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/core/base/document.php on line 811 and defined in /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/includes/managers/elements.php:68
+Stack trace:
+#0 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/core/base/document.php(811): Elementor\Elements_Manager->create_element_instance('Array')
+#1 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/astra-sites/inc/importers/batch-processing/class-astra-sites-batch-processing-elementor.php(121): Elementor\Core\Base\Document->get_elements_raw_data(Array, true)
+#2 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/astra-sites/inc/importers/batch-processing/class-astra-sites-batch-processing-elementor.php(66): Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor->import_single_post(2867)
+#3 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/astra-sites/inc/importers/batch-processing/helpers/class-wp-background-process-astra.php(41): Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor->import()
+#4 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/includes/libraries/wp-background-process.php(301): WP_Background_Process_Astra->task(Object(Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor))
+#5 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/includes/libraries/wp-background-process.php(447): WP_Background_Process->handle()
+#6 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): WP_Background_Process->handle_cron_healthcheck()
+#7 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#9 /opt/lampp/htdocs/wordpress1/wordpress/wp-cron.php(138): do_action_ref_array('wp_image_proces...', Array)
+#10 {main}
+  thrown dans /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/includes/managers/elements.php à la ligne 68
+
+2021-06-07T10:40:07+00:00 CRITICAL Uncaught TypeError: Elementor\Elements_Manager::create_element_instance(): Argument #1 ($element_data) must be of type array, string given, called in /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/core/base/document.php on line 811 and defined in /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/includes/managers/elements.php:68
+Stack trace:
+#0 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/core/base/document.php(811): Elementor\Elements_Manager->create_element_instance('Array')
+#1 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/astra-sites/inc/importers/batch-processing/class-astra-sites-batch-processing-elementor.php(121): Elementor\Core\Base\Document->get_elements_raw_data(Array, true)
+#2 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/astra-sites/inc/importers/batch-processing/class-astra-sites-batch-processing-elementor.php(66): Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor->import_single_post(2867)
+#3 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/astra-sites/inc/importers/batch-processing/helpers/class-wp-background-process-astra.php(41): Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor->import()
+#4 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/includes/libraries/wp-background-process.php(301): WP_Background_Process_Astra->task(Object(Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor))
+#5 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/includes/libraries/wp-background-process.php(447): WP_Background_Process->handle()
+#6 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): WP_Background_Process->handle_cron_healthcheck()
+#7 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#9 /opt/lampp/htdocs/wordpress1/wordpress/wp-cron.php(138): do_action_ref_array('wp_image_proces...', Array)
+#10 {main}
+  thrown dans /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/includes/managers/elements.php à la ligne 68
+
+2021-06-07T10:42:01+00:00 CRITICAL Uncaught Error: Unknown named parameter $tasks_meta_id in /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php:292
+Stack trace:
+#0 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#1 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#2 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/actions/ActionScheduler_Action.php(22): do_action_ref_array('wpforms_admin_n...', Array)
+#3 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/abstracts/ActionScheduler_Abstract_QueueRunner.php(65): ActionScheduler_Action->execute()
+#4 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(162): ActionScheduler_Abstract_QueueRunner->process_action(377, 'WP Cron')
+#5 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(132): ActionScheduler_QueueRunner->do_batch(25, 'WP Cron')
+#6 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): ActionScheduler_QueueRunner->run('WP Cron')
+#7 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#9 /opt/lampp/htdocs/wordpress1/wordpress/wp-cron.php(138): do_action_ref_array('action_schedule...', Array)
+#10 {main}
+  thrown dans /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php à la ligne 292
+
+2021-06-07T10:43:18+00:00 CRITICAL Uncaught TypeError: Elementor\Elements_Manager::create_element_instance(): Argument #1 ($element_data) must be of type array, string given, called in /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/core/base/document.php on line 811 and defined in /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/includes/managers/elements.php:68
+Stack trace:
+#0 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/core/base/document.php(811): Elementor\Elements_Manager->create_element_instance('Array')
+#1 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/astra-sites/inc/importers/batch-processing/class-astra-sites-batch-processing-elementor.php(121): Elementor\Core\Base\Document->get_elements_raw_data(Array, true)
+#2 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/astra-sites/inc/importers/batch-processing/class-astra-sites-batch-processing-elementor.php(66): Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor->import_single_post(2867)
+#3 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/astra-sites/inc/importers/batch-processing/helpers/class-wp-background-process-astra.php(41): Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor->import()
+#4 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/includes/libraries/wp-background-process.php(301): WP_Background_Process_Astra->task(Object(Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor))
+#5 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/includes/libraries/wp-background-process.php(447): WP_Background_Process->handle()
+#6 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): WP_Background_Process->handle_cron_healthcheck()
+#7 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#9 /opt/lampp/htdocs/wordpress1/wordpress/wp-cron.php(138): do_action_ref_array('wp_image_proces...', Array)
+#10 {main}
+  thrown dans /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/includes/managers/elements.php à la ligne 68
+
+2021-06-07T10:48:05+00:00 CRITICAL Uncaught TypeError: Elementor\Elements_Manager::create_element_instance(): Argument #1 ($element_data) must be of type array, string given, called in /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/core/base/document.php on line 811 and defined in /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/includes/managers/elements.php:68
+Stack trace:
+#0 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/core/base/document.php(811): Elementor\Elements_Manager->create_element_instance('Array')
+#1 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/astra-sites/inc/importers/batch-processing/class-astra-sites-batch-processing-elementor.php(121): Elementor\Core\Base\Document->get_elements_raw_data(Array, true)
+#2 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/astra-sites/inc/importers/batch-processing/class-astra-sites-batch-processing-elementor.php(66): Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor->import_single_post(2867)
+#3 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/astra-sites/inc/importers/batch-processing/helpers/class-wp-background-process-astra.php(41): Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor->import()
+#4 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/includes/libraries/wp-background-process.php(301): WP_Background_Process_Astra->task(Object(Elementor\TemplateLibrary\Astra_Sites_Batch_Processing_Elementor))
+#5 /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/woocommerce/includes/libraries/wp-background-process.php(447): WP_Background_Process->handle()
+#6 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(292): WP_Background_Process->handle_cron_healthcheck()
+#7 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#8 /opt/lampp/htdocs/wordpress1/wordpress/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#9 /opt/lampp/htdocs/wordpress1/wordpress/wp-cron.php(138): do_action_ref_array('wp_image_proces...', Array)
+#10 {main}
+  thrown dans /opt/lampp/htdocs/wordpress1/wordpress/wp-content/plugins/elementor/includes/managers/elements.php à la ligne 68
+
